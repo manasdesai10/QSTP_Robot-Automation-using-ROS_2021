@@ -41,6 +41,18 @@ class Unicycle:
         Return:
             x, y, theta (float): final pose 
         """
+        
+        
+        for dt in n*dt:
+            
+            
+            
+            x=v*np.cos(theta)*dt
+            y=v*np.sin(theta)*dt
+            theta=w*dt
+            [self.x]=self.x_points.append(x)
+            [self.y]=self.y_points.append(y)
+        
 
         return x, y, theta
 
